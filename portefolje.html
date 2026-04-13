@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portefølje – Møbelsnekker Erik Faber</title>
+  <meta name="description" content="Se Erik Fabers portefølje: skreddersydde møbler i valnøtt og eik. Spisebord, sideboards, kjøkkeninnredning, garderober og barnemøbler fra Kristiansand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header header--solid" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber – Hjem">
+        <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="Møbelsnekker Erik Faber logo">
+        <span class="header__logo-text">Erik Faber</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Hovedmeny">
+        <a href="index.html" class="nav__link">Hjem</a>
+        <a href="portefolje.html" class="nav__link nav__link--active">Portefølje</a>
+        <a href="om.html" class="nav__link">Om</a>
+        <a href="tjenester.html" class="nav__link">Tjenester</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="mobile-nav" role="navigation" aria-label="Mobilmeny">
+    <a href="index.html" class="nav__link">Hjem</a>
+    <a href="portefolje.html" class="nav__link nav__link--active">Portefølje</a>
+    <a href="om.html" class="nav__link">Om</a>
+    <a href="tjenester.html" class="nav__link">Tjenester</a>
+    <a href="kontakt.html" class="nav__link">Kontakt</a>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Portefølje</h1>
+      <div class="divider divider--center"></div>
+      <p>Et utvalg av våre arbeider i valnøtt, eik og andre edle tresorter. Hvert prosjekt er unikt og skreddersydd.</p>
+    </div>
+  </div>
+
+  <!-- Gallery Filter + Grid -->
+  <section class="section" aria-label="Bildegalleri">
+    <div class="container">
+
+      <div class="gallery-filter" role="group" aria-label="Filtrer prosjekter">
+        <button class="gallery-filter__btn gallery-filter__btn--active" data-filter="all">Alle</button>
+        <button class="gallery-filter__btn" data-filter="bord">Bord</button>
+        <button class="gallery-filter__btn" data-filter="oppbevaring">Oppbevaring</button>
+        <button class="gallery-filter__btn" data-filter="kjokken">Kjøkken</button>
+        <button class="gallery-filter__btn" data-filter="soverom">Soverom</button>
+        <button class="gallery-filter__btn" data-filter="detaljer">Detaljer</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Sideboard i valnøtt -->
+        <div class="gallery-item fade-up" data-category="oppbevaring" data-lightbox="Bilder/tv hylle.jpg" data-alt="Sideboard i valnøtt med V-formede ben" data-caption="Sideboard i valnøtt" tabindex="0" role="button" aria-label="Se stort bilde: Sideboard i valnøtt">
+          <img src="Bilder/tv hylle.jpg" alt="Sideboard i valnøtt med geometriske V-formede ben, skyvdører og skuffer" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Sideboard i valnøtt</strong>Midcentury-inspirert med V-ben</div>
+        </div>
+
+        <!-- Rundt valnøttbord -->
+        <div class="gallery-item fade-up" data-category="bord" data-lightbox="Bilder/Bord.jpg" data-alt="Rundt spisebord i valnøtt" data-caption="Rundt spisebord i valnøtt" tabindex="0" role="button" aria-label="Se stort bilde: Rundt spisebord i valnøtt">
+          <img src="Bilder/Bord.jpg" alt="Rundt spisebord i massiv valnøtt med håndlagde geometriske V-ben" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Rundt spisebord</strong>Massiv valnøtt, geometriske ben</div>
+        </div>
+
+        <!-- Bokhylle / romavdeler -->
+        <div class="gallery-item fade-up" data-category="oppbevaring" data-lightbox="Bilder/Stue hylle.jpg" data-alt="Bokhylle og romavdeler i eik" data-caption="Bokhylle og romavdeler i eik" tabindex="0" role="button" aria-label="Se stort bilde: Bokhylle og romavdeler">
+          <img src="Bilder/Stue hylle.jpg" alt="Stor bokhylle og romavdeler i eik med gjennomgang til møterom" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Bokhylle og romavdeler</strong>Eik med integrert gjennomgang</div>
+        </div>
+
+        <!-- Spisebord i eik -->
+        <div class="gallery-item fade-up" data-category="bord" data-lightbox="Bilder/kjøkken bord med stoler.jpg" data-alt="Spisebord i lys eik" data-caption="Rundt spisebord i eik" tabindex="0" role="button" aria-label="Se stort bilde: Spisebord i eik">
+          <img src="Bilder/kjøkken bord med stoler.jpg" alt="Rundt spisebord i lys eik i moderne spisestue med kunstmaleri på veggen" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Spisebord i eik</strong>Skreddersydd for rommet</div>
+        </div>
+
+        <!-- Kjøkkeninnredning -->
+        <div class="gallery-item fade-up" data-category="kjokken" data-lightbox="Bilder/Kjøkken bilde.jpg" data-alt="Kjøkkeninnredning i eik" data-caption="Kjøkkeninnredning i eik" tabindex="0" role="button" aria-label="Se stort bilde: Kjøkkeninnredning">
+          <img src="Bilder/Kjøkken bilde.jpg" alt="Kjøkkeninnredning i eik med integrert stekeovn og oppvaskmaskin" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Kjøkkeninnredning</strong>Eik med integrerte hvitevarer</div>
+        </div>
+
+        <!-- Garderobeløsning -->
+        <div class="gallery-item fade-up" data-category="oppbevaring" data-lightbox="Bilder/Garderobe gang.jpg" data-alt="Garderobeløsning i eik" data-caption="Garderobeløsning i eik" tabindex="0" role="button" aria-label="Se stort bilde: Garderobeløsning">
+          <img src="Bilder/Garderobe gang.jpg" alt="Garderobeløsning i eik med speil, kurvet hjørneskap og skuffer" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Garderobeløsning</strong>Eik med speil og kurvet profil</div>
+        </div>
+
+        <!-- Barneseng -->
+        <div class="gallery-item fade-up" data-category="soverom" data-lightbox="Bilder/seng til barnerom.jpg" data-alt="Barneseng med oppbevaring" data-caption="Barneseng med integrert oppbevaring" tabindex="0" role="button" aria-label="Se stort bilde: Barneseng">
+          <img src="Bilder/seng til barnerom.jpg" alt="Barneseng i eik med integrerte skuffer og lekne sirkulære utskjæringer" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Barneseng</strong>Eik med smart oppbevaring</div>
+        </div>
+
+        <!-- Utvidet bord -->
+        <div class="gallery-item fade-up" data-category="bord" data-lightbox="Bilder/utvidet bord.jpg" data-alt="Utvidet spisebord i valnøtt" data-caption="Spisebord i valnøtt – utvidet" tabindex="0" role="button" aria-label="Se stort bilde: Utvidet spisebord">
+          <img src="Bilder/utvidet bord.jpg" alt="Spisebord i valnøtt utvidet til oval form med ileggsplater" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Spisebord utvidet</strong>Valnøtt med ileggsplater</div>
+        </div>
+
+        <!-- Sideboard detalj -->
+        <div class="gallery-item fade-up" data-category="detaljer" data-lightbox="Bilder/tv hylle bilde 2.jpg" data-alt="Sideboard i valnøtt, detalj" data-caption="Sideboard i valnøtt – detalj" tabindex="0" role="button" aria-label="Se stort bilde: Sideboard detalj">
+          <img src="Bilder/tv hylle bilde 2.jpg" alt="Detalj av sideboard i valnøtt som viser trestruktur og håndtak" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Sideboard – detalj</strong>Valnøttens naturlige mønster</div>
+        </div>
+
+        <!-- Nærbilde skuff -->
+        <div class="gallery-item fade-up" data-category="detaljer" data-lightbox="Bilder/Nærbilde skuff.jpg" data-alt="Kurvet skuffedesign i eik" data-caption="Detalj: kurvet skuffedesign i eik" tabindex="0" role="button" aria-label="Se stort bilde: Kurvet skuffedesign">
+          <img src="Bilder/Nærbilde skuff.jpg" alt="Nærbilde av kurvet skuffedesign i massiv eik med synlig trestruktur" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Kurvet skuffedesign</strong>Presisjon i massiv eik</div>
+        </div>
+
+        <!-- Nærbilde bord ben -->
+        <div class="gallery-item fade-up" data-category="detaljer" data-lightbox="Bilder/Nærbilde bord.jpg" data-alt="V-formet bordben i valnøtt" data-caption="Detalj: V-formet bordben i valnøtt" tabindex="0" role="button" aria-label="Se stort bilde: Bordben detalj">
+          <img src="Bilder/Nærbilde bord.jpg" alt="Nærbilde av V-formet bordben i valnøtt med presise skjøter" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>V-formet bordben</strong>Håndlagd skjøt i valnøtt</div>
+        </div>
+
+        <!-- Barneseng åpen -->
+        <div class="gallery-item fade-up" data-category="soverom" data-lightbox="Bilder/seng open.jpg" data-alt="Barneseng med åpne skuffer" data-caption="Barneseng – oppbevaring åpen" tabindex="0" role="button" aria-label="Se stort bilde: Barneseng med åpne skuffer">
+          <img src="Bilder/seng open.jpg" alt="Barneseng i eik med åpne skuffer som viser romslig oppbevaringsløsning" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Barneseng – oppbevaring</strong>Fire store skuffer i eik</div>
+        </div>
+
+        <!-- Nærbilde seng -->
+        <div class="gallery-item fade-up" data-category="detaljer" data-lightbox="Bilder/nærbilde seng.jpg" data-alt="Detalj av barneseng i eik" data-caption="Barneseng – håndverkdetalj" tabindex="0" role="button" aria-label="Se stort bilde: Seng detalj">
+          <img src="Bilder/nærbilde seng.jpg" alt="Nærbilde av barneseng i eik som viser sirkulære utskjæringer og finish" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Seng – detalj</strong>Sirkulære utskjæringer i eik</div>
+        </div>
+
+        <!-- Nærbilde seng 2 -->
+        <div class="gallery-item fade-up" data-category="detaljer" data-lightbox="Bilder/nærbilde seng 2.jpg" data-alt="Barneseng konstruksjonsdetalj" data-caption="Barneseng – konstruksjonsdetalj" tabindex="0" role="button" aria-label="Se stort bilde: Seng konstruksjonsdetalj">
+          <img src="Bilder/nærbilde seng 2.jpg" alt="Nærbilde av konstruksjonsdetalj på barneseng i eik" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Konstruksjonsdetalj</strong>Presisjon og kvalitet</div>
+        </div>
+
+        <!-- Bord bilde 2 -->
+        <div class="gallery-item fade-up" data-category="bord" data-lightbox="Bilder/bord bilde 2.jpg" data-alt="Valnøttbord ovenfra" data-caption="Spisebord i valnøtt – bordplate" tabindex="0" role="button" aria-label="Se stort bilde: Bordplate i valnøtt">
+          <img src="Bilder/bord bilde 2.jpg" alt="Spisebord i valnøtt sett ovenfra med vakker trestruktur" class="gallery-item__img" loading="lazy">
+          <div class="gallery-item__caption"><strong>Bordplate i valnøtt</strong>Naturlig trestruktur</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" aria-labelledby="portfolio-cta">
+    <h2 id="portfolio-cta">Inspirert?</h2>
+    <p>Vi lager gjerne noe unikt for deg. Ta kontakt for en uforpliktende samtale om ditt prosjekt.</p>
+    <a href="kontakt.html" class="btn btn--white">Kontakt oss for prosjektet</a>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildevisning">
+    <button class="lightbox__close" aria-label="Lukk bildevisning">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Forrige bilde">&#8249;</button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Neste bilde">&#8250;</button>
+    <img class="lightbox__img" src="" alt="">
+    <div class="lightbox__caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber">
+            <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="">
+            <span class="header__logo-text">Erik Faber</span>
+          </a>
+          <p>Skreddersydde møbler i valnøtt og eik. Håndlagd kvalitet fra Kristiansand.</p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="portefolje.html">Portefølje</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informasjon</h4>
+          <ul class="footer__links">
+            <li><a href="presse.html">Presse</a></li>
+            <li><a href="personvern.html">Personvern</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sosiale medier</h4>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/erikfaber.snekker" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/erikfabersnekker" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Møbelsnekker Erik Faber. Alle rettigheter reservert.</span>
+        <a href="personvern.html">Personvern & vilkår</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

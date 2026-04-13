@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Møbelsnekker Erik Faber</title>
+  <meta name="description" content="Kontakt møbelsnekker Erik Faber i Kristiansand. Send en melding, ring oss eller book en gratis befaring for ditt møbelprosjekt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header header--solid" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber – Hjem">
+        <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="Møbelsnekker Erik Faber logo">
+        <span class="header__logo-text">Erik Faber</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Hovedmeny">
+        <a href="index.html" class="nav__link">Hjem</a>
+        <a href="portefolje.html" class="nav__link">Portefølje</a>
+        <a href="om.html" class="nav__link">Om</a>
+        <a href="tjenester.html" class="nav__link">Tjenester</a>
+        <a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="mobile-nav" role="navigation" aria-label="Mobilmeny">
+    <a href="index.html" class="nav__link">Hjem</a>
+    <a href="portefolje.html" class="nav__link">Portefølje</a>
+    <a href="om.html" class="nav__link">Om</a>
+    <a href="tjenester.html" class="nav__link">Tjenester</a>
+    <a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Kontakt oss</h1>
+      <div class="divider divider--center"></div>
+      <p>Vi hører gjerne fra deg. Send en melding eller ring oss for en uforpliktende samtale om ditt prosjekt.</p>
+    </div>
+  </div>
+
+  <!-- Contact Form + Info -->
+  <section class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 id="contact-heading" class="sr-only">Kontaktskjema og informasjon</h2>
+      <div class="contact-layout">
+
+        <!-- Form -->
+        <div class="fade-up">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Navn</label>
+              <input type="text" id="name" name="name" placeholder="Ditt fulle navn" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-post</label>
+              <input type="email" id="email" name="email" placeholder="din@epost.no" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon <span class="text-muted">(valgfritt)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+47 000 00 000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="service">Type prosjekt</label>
+              <select id="service" name="service">
+                <option value="">Velg type prosjekt...</option>
+                <option value="mobler">Skreddersydde møbler</option>
+                <option value="kjokken">Kjøkkeninnredning</option>
+                <option value="garderobe">Garderobe og innredning</option>
+                <option value="barnemøbler">Barnemøbler</option>
+                <option value="restaurering">Restaurering</option>
+                <option value="radgivning">Interiørrådgivning</option>
+                <option value="annet">Annet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Melding</label>
+              <textarea id="message" name="message" placeholder="Fortell oss om prosjektet ditt, materialer du ønsker, tidsramme osv." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%;">Send melding</button>
+            <p class="text-muted text-sm" style="margin-top: var(--space-sm); text-align: center;">Vi behandler dine opplysninger konfidensielt. <a href="personvern.html">Les vår personvernerklæring</a>.</p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="fade-up">
+          <div class="contact-info">
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-info__text">
+                <h4>Telefon</h4>
+                <p><a href="tel:+4700000000">+47 000 00 000</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-info__text">
+                <h4>E-post</h4>
+                <p><a href="mailto:post@erikfaber.no">post@erikfaber.no</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-info__text">
+                <h4>Adresse</h4>
+                <p>Kristiansand, Norge</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact-info__text">
+                <h4>Åpningstider</h4>
+                <p>Man&ndash;fre: 08:00&ndash;16:00</p>
+                <p class="text-muted text-sm">Befaring etter avtale</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div style="margin-top: var(--space-lg); text-align: center;">
+            <p class="text-muted text-sm" style="margin-bottom: var(--space-sm);">Følg oss på sosiale medier</p>
+            <div class="footer__social" style="justify-content: center;">
+              <a href="https://www.instagram.com/erikfaber.snekker" target="_blank" rel="noopener" aria-label="Instagram" style="border-color: var(--border); color: var(--text-muted);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://www.facebook.com/erikfabersnekker" target="_blank" rel="noopener" aria-label="Facebook" style="border-color: var(--border); color: var(--text-muted);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="map-container fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65485.05427846937!2d7.9313!3d58.1599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638028aae442c4d%3A0x4b6a16ee4f6da2b7!2sKristiansand!5e0!3m2!1sno!2sno!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kart over Kristiansand"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber">
+            <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="">
+            <span class="header__logo-text">Erik Faber</span>
+          </a>
+          <p>Skreddersydde møbler i valnøtt og eik. Håndlagd kvalitet fra Kristiansand.</p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="portefolje.html">Portefølje</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informasjon</h4>
+          <ul class="footer__links">
+            <li><a href="presse.html">Presse</a></li>
+            <li><a href="personvern.html">Personvern</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sosiale medier</h4>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/erikfaber.snekker" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/erikfabersnekker" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Møbelsnekker Erik Faber. Alle rettigheter reservert.</span>
+        <a href="personvern.html">Personvern & vilkår</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

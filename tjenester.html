@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjenester & Priser – Møbelsnekker Erik Faber</title>
+  <meta name="description" content="Tjenester fra møbelsnekker Erik Faber: skreddersydde møbler, kjøkkeninnredning, garderober, restaurering og interiørløsninger. Pris etter avtale.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header header--solid" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber – Hjem">
+        <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="Møbelsnekker Erik Faber logo">
+        <span class="header__logo-text">Erik Faber</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Hovedmeny">
+        <a href="index.html" class="nav__link">Hjem</a>
+        <a href="portefolje.html" class="nav__link">Portefølje</a>
+        <a href="om.html" class="nav__link">Om</a>
+        <a href="tjenester.html" class="nav__link nav__link--active">Tjenester</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="mobile-nav" role="navigation" aria-label="Mobilmeny">
+    <a href="index.html" class="nav__link">Hjem</a>
+    <a href="portefolje.html" class="nav__link">Portefølje</a>
+    <a href="om.html" class="nav__link">Om</a>
+    <a href="tjenester.html" class="nav__link nav__link--active">Tjenester</a>
+    <a href="kontakt.html" class="nav__link">Kontakt</a>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Tjenester & Priser</h1>
+      <div class="divider divider--center"></div>
+      <p>Vi tilbyr et bredt spekter av snekkertjenester &mdash; alltid skreddersydd etter dine behov.</p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section" aria-labelledby="services-heading">
+    <div class="container">
+      <h2 id="services-heading" class="sr-only">Våre tjenester</h2>
+      <div class="services-grid">
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Skreddersydde møbler</h3>
+          <p>Spisebord, sideboards, bokhyller, TV-møbler og mer &mdash; designet og bygget spesifikt for ditt rom. Vi jobber i valnøtt, eik, ask og andre edle tresorter.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"/><line x1="12" y1="13" x2="12" y2="17"/></svg>
+          </div>
+          <h3>Kjøkkeninnredning</h3>
+          <p>Helhetlige kjøkkenløsninger i massivtre med integrerte hvitevarer. Fra fronter og benkeplater til spesialtilpassede skap og skuffer.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="2" x2="10" y2="10"/></svg>
+          </div>
+          <h3>Garderober og innredning</h3>
+          <p>Skreddersydde garderobeløsninger, gangmøbler og innebygde skap. Vi utnytter rommet maksimalt med elegante, funksjonelle løsninger.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Barnemøbler</h3>
+          <p>Senger, oppbevaringsløsninger og lekemøbler designet med barns behov i fokus. Trygge materialer, lekne detaljer og smart funksjonalitet.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Restaurering</h3>
+          <p>Oppussing og restaurering av eksisterende designmøbler. Vi gir nytt liv til slitte klassikere med respekt for originaldesignet.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Interiørrådgivning</h3>
+          <p>Helhetlig rådgivning for interiørprosjekter. Vi hjelper deg med materialvalg, fargepaletter og møblering som skaper harmoni i rommet.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Info -->
+  <section class="section section--alt" aria-labelledby="pricing-heading">
+    <div class="container">
+      <div class="about-layout fade-up">
+        <div class="about-layout__text">
+          <h2 id="pricing-heading">Priser</h2>
+          <div class="divider"></div>
+          <p>Hvert prosjekt er unikt, og prisen avhenger av materialvalg, kompleksitet og omfang. Vi gir alltid et detaljert tilbud etter befaring og samtale, slik at du vet nøyaktig hva du investerer i.</p>
+          <p>Vi tror på åpenhet og ingen overraskelser. Våre priser reflekterer kvaliteten på materialene, håndverket og den personlige oppfølgingen du får gjennom hele prosessen.</p>
+          <p style="color: var(--text-muted); font-size: 0.9375rem;"><strong>Befaring er gratis og uforpliktende.</strong> Ta kontakt så avtaler vi et møte.</p>
+          <div style="margin-top: var(--space-lg);">
+            <a href="kontakt.html" class="btn btn--primary">Be om tilbud</a>
+          </div>
+        </div>
+        <img src="Bilder/Garderobe gang.jpg" alt="Garderobeløsning i eik med speil og kurvet hjørneskap, designet av Erik Faber" class="about-layout__img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" aria-labelledby="services-cta">
+    <h2 id="services-cta">Klart for noe nytt?</h2>
+    <p>Kontakt oss for en uforpliktende samtale. Vi hjelper deg med å realisere ditt møbelprosjekt.</p>
+    <a href="kontakt.html" class="btn btn--white">Bestill gratis befaring</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber">
+            <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="">
+            <span class="header__logo-text">Erik Faber</span>
+          </a>
+          <p>Skreddersydde møbler i valnøtt og eik. Håndlagd kvalitet fra Kristiansand.</p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="portefolje.html">Portefølje</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informasjon</h4>
+          <ul class="footer__links">
+            <li><a href="presse.html">Presse</a></li>
+            <li><a href="personvern.html">Personvern</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sosiale medier</h4>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/erikfaber.snekker" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/erikfabersnekker" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Møbelsnekker Erik Faber. Alle rettigheter reservert.</span>
+        <a href="personvern.html">Personvern & vilkår</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

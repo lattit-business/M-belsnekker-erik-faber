@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Møbelsnekker Erik Faber | Skreddersydde møbler i Kristiansand</title>
+  <meta name="description" content="Møbelsnekker Erik Faber i Kristiansand lager skreddersydde møbler i valnøtt og eik. Tidløst design, håndlagd kvalitet. Se portefølje og be om tilbud.">
+  <meta name="keywords" content="møbelsnekker, Kristiansand, skreddersydde møbler, valnøtt, eik, håndlaget, interiør, snekker">
+  <meta property="og:title" content="Møbelsnekker Erik Faber | Skreddersydde møbler i Kristiansand">
+  <meta property="og:description" content="Tidløst design og håndlagd kvalitet. Skreddersydde møbler i valnøtt og eik.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "#business",
+        "name": "Møbelsnekker Erik Faber",
+        "description": "Skreddersydde møbler i valnøtt og eik. Håndlagd kvalitet fra Kristiansand.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kristiansand",
+          "addressCountry": "NO"
+        },
+        "url": "#",
+        "priceRange": "$$$$",
+        "image": "Bilder/Stue hylle.jpg"
+      },
+      {
+        "@type": "Person",
+        "@id": "#person",
+        "name": "Erik Faber Swensonn",
+        "jobTitle": "Møbelsnekker",
+        "worksFor": { "@id": "#business" },
+        "knowsAbout": ["Møbelsnekring", "Trearbeid", "Interiørdesign", "Valnøtt", "Eik"]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Rundt spisebord i valnøtt",
+        "description": "Håndlagd rundt spisebord i massiv valnøtt med geometriske V-formede ben.",
+        "image": "Bilder/Bord.jpg",
+        "creator": { "@id": "#person" }
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Sideboard i valnøtt",
+        "description": "Midcentury-inspirert sideboard i valnøtt med skyvdører og skuffer.",
+        "image": "Bilder/tv hylle.jpg",
+        "creator": { "@id": "#person" }
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Bokhylle og romavdeler i eik",
+        "description": "Stor bokhylle med gjennomgang, bygget i massiv eik med integrert belysning.",
+        "image": "Bilder/Stue hylle.jpg",
+        "creator": { "@id": "#person" }
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Kjøkkeninnredning i eik",
+        "description": "Skreddersydd kjøkkenskap i eik med integrerte hvitevarer.",
+        "image": "Bilder/Kjøkken bilde.jpg",
+        "creator": { "@id": "#person" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header header--transparent" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber – Hjem">
+        <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="Møbelsnekker Erik Faber logo">
+        <span class="header__logo-text">Erik Faber</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Hovedmeny">
+        <a href="index.html" class="nav__link nav__link--active">Hjem</a>
+        <a href="portefolje.html" class="nav__link">Portefølje</a>
+        <a href="om.html" class="nav__link">Om</a>
+        <a href="tjenester.html" class="nav__link">Tjenester</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="nav-overlay" id="mobile-nav" role="navigation" aria-label="Mobilmeny">
+    <a href="index.html" class="nav__link nav__link--active">Hjem</a>
+    <a href="portefolje.html" class="nav__link">Portefølje</a>
+    <a href="om.html" class="nav__link">Om</a>
+    <a href="tjenester.html" class="nav__link">Tjenester</a>
+    <a href="kontakt.html" class="nav__link">Kontakt</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Introduksjon">
+    <div class="hero__bg" style="background-image: url('Bilder/Stue hylle.jpg');" role="img" aria-label="Bokhylle og romavdeler i eik, designet av Erik Faber"></div>
+    <div class="hero__content">
+      <p class="hero__tagline">Møbelsnekker i Kristiansand</p>
+      <h1 class="hero__title">Skreddersydde møbler i&nbsp;håndlagd kvalitet</h1>
+      <p class="hero__subtitle">Vi designer og bygger unike møbler etter dine ønsker. Hvert stykke er formet med omtanke for materialet, rommet og menneskene som skal bruke det.</p>
+      <div class="btn-group">
+        <a href="portefolje.html" class="btn btn--primary">Se portefølje</a>
+        <a href="kontakt.html" class="btn btn--secondary" style="border-color: rgba(255,255,255,0.5); color: #fff;">Kontakt oss</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom: var(--space-xl);">
+        <h2 id="featured-heading">Utvalgte prosjekter</h2>
+        <div class="divider divider--center"></div>
+        <p class="text-muted" style="max-width: 520px; margin: 0 auto;">Et utvalg av våre siste arbeider i valnøtt og eik &mdash; fra spisebord og sideboards til skreddersydde innredningsløsninger.</p>
+      </div>
+      <div class="projects-grid">
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/tv hylle.jpg" alt="Sideboard i valnøtt med geometriske V-formede ben og skyvdører" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Sideboard i valnøtt</div>
+              <div class="project-card__desc">Midcentury-inspirert design</div>
+            </div>
+          </div>
+        </a>
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/Bord.jpg" alt="Rundt spisebord i massiv valnøtt med håndlagde V-ben" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Rundt spisebord</div>
+              <div class="project-card__desc">Valnøtt med geometriske ben</div>
+            </div>
+          </div>
+        </a>
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/kjøkken bord med stoler.jpg" alt="Rundt spisebord i lys eik i moderne spisestue med kunstmaleri" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Spisebord i eik</div>
+              <div class="project-card__desc">Skreddersydd for rommet</div>
+            </div>
+          </div>
+        </a>
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/Kjøkken bilde.jpg" alt="Kjøkkeninnredning i eik med integrerte hvitevarer" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Kjøkkeninnredning</div>
+              <div class="project-card__desc">Helhetlig løsning i eik</div>
+            </div>
+          </div>
+        </a>
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/Garderobe gang.jpg" alt="Garderobeløsning i eik med speil og kurvet hjørneskap" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Garderobeløsning</div>
+              <div class="project-card__desc">Eik med speil og kurvet profil</div>
+            </div>
+          </div>
+        </a>
+        <a href="portefolje.html" class="project-card fade-up">
+          <img src="Bilder/seng til barnerom.jpg" alt="Barneseng i eik med integrert oppbevaring og lekne detaljer" class="project-card__img" loading="lazy">
+          <div class="project-card__overlay">
+            <div>
+              <div class="project-card__title">Barneseng</div>
+              <div class="project-card__desc">Eik med smart oppbevaring</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="text-center fade-up" style="margin-top: var(--space-xl);">
+        <a href="portefolje.html" class="btn btn--secondary">Se hele porteføljen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="section section--alt" aria-labelledby="about-teaser-heading">
+    <div class="container">
+      <div class="about-layout fade-up">
+        <img src="Bilder/Nærbilde skuff.jpg" alt="Nærbilde av kurvet skuffedesign i massiv eik som viser presisjon i håndverket" class="about-layout__img" loading="lazy">
+        <div class="about-layout__text">
+          <h2 id="about-teaser-heading">Håndverk med sjel</h2>
+          <div class="divider"></div>
+          <p>Erik Faber Swensonn er møbelsnekker i Kristiansand med en lidenskap for naturlige materialer og tidløst design. Hvert prosjekt begynner med en samtale &mdash; om rommet, behovene og drømmene.</p>
+          <p>Fra massivt valnøttbord til skreddersydde kjøkkeninnredninger i eik: vi kombinerer tradisjonelt håndverk med moderne formspråk for å skape møbler som varer i generasjoner.</p>
+          <div style="margin-top: var(--space-lg);">
+            <a href="om.html" class="btn btn--secondary">Les mer om Erik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner" aria-labelledby="cta-heading">
+    <h2 id="cta-heading">Har du et prosjekt i tankene?</h2>
+    <p>Ta kontakt for en uforpliktende samtale om ditt neste møbelprosjekt. Vi hjelper deg fra ide til ferdig produkt.</p>
+    <a href="kontakt.html" class="btn btn--white">Kontakt oss</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Møbelsnekker Erik Faber">
+            <img src="Bilder/Møbelsnekker erik faber cropped.png" alt="">
+            <span class="header__logo-text">Erik Faber</span>
+          </a>
+          <p>Skreddersydde møbler i valnøtt og eik. Håndlagd kvalitet fra Kristiansand siden 2015.</p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="portefolje.html">Portefølje</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informasjon</h4>
+          <ul class="footer__links">
+            <li><a href="presse.html">Presse</a></li>
+            <li><a href="personvern.html">Personvern</a></li>
+            <li><a href="personvern.html">Vilkår</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sosiale medier</h4>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/erikfaber.snekker" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/erikfabersnekker" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Møbelsnekker Erik Faber. Alle rettigheter reservert.</span>
+        <a href="personvern.html">Personvern & vilkår</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
